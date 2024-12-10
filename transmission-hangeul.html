@@ -78,7 +78,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 15vh;
+        height: 100vh;
         padding: 10px;
         box-sizing: border-box;
       }
@@ -111,21 +111,11 @@
         object-fit: cover;
       }
       @media (max-width: 1080px) {
-        body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .container {
           height: 100vh;
+          display: flex;
           flex-direction: column;
-        }
-        .text-container p {
-          margin-left: 50px;
-          margin-right: 50px;
-        }
-      }
-      @media (min-width: 1081px) {
-        body {
-          display: block;
+          justify-content: center;
         }
       }
     </style>
