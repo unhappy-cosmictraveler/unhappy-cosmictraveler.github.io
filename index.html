@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>언해피의 우주여행 Unhappy the Cosmic Traveler</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
     <style>
       body {
         background-color: #000000;
@@ -17,20 +18,26 @@
         text-align: center;
         font-size: 70px;
       }
-      img {
-        width: 40%;
-        height: auto;
-      }
       table {
         border-collapse: collapse;
-        table-layout: auto;
-        width: auto;  
+        width: auto; /* 너비를 내용에 맞춤 */
         background-color: black;
+        margin: 0 auto;
       }
       td {
         border: 1px solid black;
         padding: 10px;
         text-align: center;
+      }
+      .merged {
+        padding: 0;
+      }
+      img {
+        width: 40%; /* 이미지 너비를 40%로 고정 */
+        min-width: 300px; /* 최소 너비 설정 */
+        height: auto; /* 비율 유지 */
+        display: block;
+        margin: 0 auto;
       }
       .font-style-1 {
         text-decoration: none;
@@ -45,9 +52,6 @@
         font-size: 30px;
         color: white;
         text-align: left;
-      }
-      .merged {
-        padding: 0;
       }
       .container {
         display: flex;
@@ -72,7 +76,7 @@
       <table>
         <tr>
           <td class="merged" colspan="2">
-            <img src="./img/unhappy.jpg">            
+            <img src="./img/unhappy.jpg" alt="언해피 이미지">            
           </td>
         </tr>
         <tr>
