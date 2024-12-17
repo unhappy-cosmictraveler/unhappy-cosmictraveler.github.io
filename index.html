@@ -101,11 +101,13 @@
             font-style: normal;
         }
         @media (max-width: 1080px) {
+            html, body {
+                height: 100%;
+            }
             .top-container {
                 flex-direction: column; /* 큰 이미지와 텍스트 세로 정렬 */
                 align-items: flex-start; /* 텍스트 왼쪽 정렬 */
-                text-align: left;
-                height: 100%;
+                text-align: left;                
             }
             .top-container img {
                 width: 100%; /* 화면 너비에 맞춤 */                
