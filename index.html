@@ -18,34 +18,36 @@
             font-family: Arial, sans-serif;
         }
 
-        /* 큰 사각형 컨테이너 */
+        /* 큰 사각형 컨테이너 크기 두 배로 키우기 */
         .main-box {
             width: 90%;
-            max-width: 800px;
+            max-width: 1600px; /* 기존 800px에서 2배 확장 */
             background-color: #000; /* 컨테이너 배경도 검은색 */
-            padding: 20px;
+            padding: 40px; /* 패딩 두 배로 확장 */
             box-sizing: border-box;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* 약간의 그림자 효과 */
+            /* 테두리와 그림자 제거 */
+            border: none;
+            box-shadow: none;
         }
 
         /* 큰 이미지와 텍스트 */
         .top-container {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 20px;
+            margin-bottom: 40px; /* 간격 두 배로 확장 */
         }
 
         .top-container img {
-            width: 200px;
+            width: 400px; /* 기존 200px에서 두 배 확장 */
             height: auto;
             border-radius: 0; /* 이미지 각지게 만들기 */
-            margin-right: 20px;
+            margin-right: 40px; /* 간격 두 배로 확장 */
         }
 
         .top-container .text {
             flex: 1;
             text-align: left;
-            font-size: 16px;
+            font-size: 32px; /* 텍스트 크기 두 배 확장 */
             line-height: 1.5;
             word-wrap: break-word;
         }
@@ -54,33 +56,33 @@
         .small-images-container {
             display: flex;
             justify-content: space-between;
-            gap: 10px;
+            gap: 20px; /* 간격 두 배로 확장 */
             flex-wrap: wrap; /* 작은 화면 대응 */
         }
 
         .item {
             text-align: center;
-            width: calc(25% - 10px);
+            width: calc(25% - 20px); /* 너비 두 배 확장 */
         }
 
         .item img {
-            width: 100px;
-            height: 100px;
+            width: 200px; /* 기존 100px에서 두 배 확장 */
+            height: 200px; /* 기존 100px에서 두 배 확장 */
             object-fit: cover;
             border-radius: 0; /* 작은 이미지 각지게 만들기 */
-            margin-bottom: 5px;
+            margin-bottom: 10px; /* 간격 두 배로 확장 */
         }
 
         .item button {
             display: block;
             width: 100%;
-            margin: 5px 0;
-            padding: 8px 0;
+            margin: 10px 0; /* 간격 두 배로 확장 */
+            padding: 16px 0; /* 패딩 두 배로 확장 */
             border: 2px solid #fff; /* 버튼 흰색 테두리 */
             background-color: #000; /* 버튼 배경 검은색 */
             color: #fff; /* 버튼 텍스트 흰색 */
             cursor: pointer;
-            font-size: 14px;
+            font-size: 28px; /* 버튼 텍스트 크기 두 배 확장 */
             /* 각진 네모 버튼 */
             border-radius: 0; /* 둥근 모서리 제거 */
         }
@@ -100,7 +102,7 @@
             .top-container img {
                 width: 100%; /* 화면 너비에 맞춤 */
                 height: auto;
-                margin: 0 0 10px 0; /* 이미지 아래 여백 추가 */
+                margin: 0 0 20px 0; /* 이미지 아래 여백 추가 */
             }
 
             .top-container .text {
@@ -114,7 +116,7 @@
 
             .item {
                 width: 100%; /* 작은 이미지와 버튼 너비를 화면에 맞춤 */
-                margin-bottom: 10px;
+                margin-bottom: 20px; /* 간격 두 배로 확장 */
             }
         }
     </style>
@@ -124,7 +126,7 @@
     <div class="main-box">
         <!-- 큰 이미지와 텍스트 -->
         <div class="top-container">
-            <img src="https://via.placeholder.com/200" alt="큰 이미지">
+            <img src="https://via.placeholder.com/400" alt="큰 이미지">
             <div class="text">
                 <h2>제목을 입력하세요</h2>
                 <p>
@@ -136,22 +138,22 @@
         <!-- 작은 이미지와 버튼 그룹 -->
         <div class="small-images-container">
             <div class="item">
-                <img src="https://via.placeholder.com/100" alt="이미지1">
+                <img src="https://via.placeholder.com/200" alt="이미지1">
                 <button>버튼1-1</button>
                 <button>버튼1-2</button>
             </div>
             <div class="item">
-                <img src="https://via.placeholder.com/100" alt="이미지2">
+                <img src="https://via.placeholder.com/200" alt="이미지2">
                 <button>버튼2-1</button>
                 <button>버튼2-2</button>
             </div>
             <div class="item">
-                <img src="https://via.placeholder.com/100" alt="이미지3">
+                <img src="https://via.placeholder.com/200" alt="이미지3">
                 <button>버튼3-1</button>
                 <button>버튼3-2</button>
             </div>
             <div class="item">
-                <img src="https://via.placeholder.com/100" alt="이미지4">
+                <img src="https://via.placeholder.com/200" alt="이미지4">
                 <button>버튼4-1</button>
                 <button>버튼4-2</button>
             </div>
