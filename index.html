@@ -1,138 +1,161 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="트랜스미션 한글 TRANSMISSION HANGEUL">
-        <meta property="og:description" content="한국 최초의 우주 메시지 프로젝트 The First Interstellar Message from Korea">
-        <meta property="og:image" content="./img/18.jpg">
-        <meta property="og:url" content="https://transmission-hangeul.space">
-        <meta property="og:type" content="website">
-        <title>트랜스미션 한글 TRANSMISSION HANGEUL</title>
-        <link rel="icon" href="./img/favicon.jpg" type="image/jpeg">
-    </head>
-    
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정렬된 레이아웃</title>
     <style>
-        html, body {
+        /* 전체 화면 중앙 정렬 및 배경 색상 */
+        body, html {
             margin: 0;
             padding: 0;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            width: 100%;
-            overflow: auto;
-            background-color: #000;
+            background-color: #000; /* 배경 검은색 */
+            color: #fff; /* 기본 텍스트 색상 흰색 */
+            font-family: Arial, sans-serif;
         }
-        .container {
+
+        /* 큰 사각형 컨테이너 */
+        .main-box {
+            width: 90%;
+            max-width: 800px;
+            background-color: #000; /* 컨테이너 배경도 검은색 */
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* 약간의 그림자 효과 */
+        }
+
+        /* 큰 이미지와 텍스트 */
+        .top-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .top-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 0; /* 이미지 각지게 만들기 */
+            margin-right: 20px;
+        }
+
+        .top-container .text {
+            flex: 1;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        /* 작은 이미지와 버튼 그룹 */
+        .small-images-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap; /* 작은 화면 대응 */
+        }
+
+        .item {
             text-align: center;
-            margin: 0px 0;
+            width: calc(25% - 10px);
         }
-        .img {
-            width: 500px;
-            height: 506px;
-            background-image: url('./img/18.jpg');
-            background-size: cover;
-            background-position: center;
-            border: 2px solid white;
-            display: inline-block;
+
+        .item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 0; /* 작은 이미지 각지게 만들기 */
+            margin-bottom: 5px;
         }
-        .text-big {
-            font-family: 'EBSHunminjeongeumR', sans-serif;
-            font-size: 80px;
-            color: #fff;
+
+        .item button {
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px 0;
+            border: 2px solid #fff; /* 버튼 흰색 테두리 */
+            background-color: #000; /* 버튼 배경 검은색 */
+            color: #fff; /* 버튼 텍스트 흰색 */
+            cursor: pointer;
+            font-size: 14px;
+            /* 각진 네모 버튼 */
+            border-radius: 0; /* 둥근 모서리 제거 */
         }
-        .text-medium {
-            font-family: 'NotoSansKR-R', sans-serif;
-            font-size: 30px;
-            color: #fff;
+
+        .item button:hover {
+            background-color: #333; /* 버튼 호버 시 어두운 회색 */
         }
-        .text-small {
-            font-family: 'NotoSansKR-M', sans-serif;
-            font-size: 25px;
-            color: #fff;
-        }
-        .text-medium a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 10px;
-        }
-        @font-face {
-            font-family: 'NotoSansKR-R';
-            src: url('./fonts/NotoSansKR-Regular.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'NotoSansKR-M';
-            src: url('./fonts/NotoSansKR-Medium.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'EBSHunminjeongeumR';
-            src: url('./fonts/EBSHunminjeongeumR.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @media (max-width: 1080px) {
-            html, body {
-                margin: 0;
-                padding: 0;
-                height: 100%;
-                overflow: hidden;
+
+        /* 반응형: 모바일 화면 */
+        @media (max-width: 768px) {
+            .top-container {
+                flex-direction: column; /* 큰 이미지와 텍스트 세로 정렬 */
+                align-items: flex-start; /* 텍스트 왼쪽 정렬 */
+                text-align: left;
             }
-            .img {
-                width: 300px;
-                height: 304px;
-                border: 1px solid white;
+
+            .top-container img {
+                width: 100%; /* 화면 너비에 맞춤 */
+                height: auto;
+                margin: 0 0 10px 0; /* 이미지 아래 여백 추가 */
             }
-            .text-big {
-                font-family: 'EBSHunminjeongeumR', sans-serif;
-                font-size: 40px;
-                margin: 10px 0;
-                color: #fff;
+
+            .top-container .text {
+                width: 100%; /* 텍스트가 화면 너비에 맞게 표시 */
             }
-            .text-medium {
-                font-family: 'NotoSansKR-R', sans-serif;
-                font-size: 20px;
-                color: #fff;
+
+            .small-images-container {
+                flex-direction: column; /* 작은 이미지와 버튼 세로 정렬 */
+                align-items: center;
             }
-            .text-small {
-                font-family: 'NotoSansKR-M', sans-serif;
-                font-size: 15px;
-                color: #fff;
+
+            .item {
+                width: 100%; /* 작은 이미지와 버튼 너비를 화면에 맞춤 */
+                margin-bottom: 10px;
             }
         }
     </style>
-    
-    <body>
-        <div class="container">                      
-            <div class="text-small">
-                한국 최초의 우주 메시지 프로젝트
-                <br>
-                The First Interstellar Message from Korea
+</head>
+<body>
+    <!-- 큰 사각형 -->
+    <div class="main-box">
+        <!-- 큰 이미지와 텍스트 -->
+        <div class="top-container">
+            <img src="https://via.placeholder.com/200" alt="큰 이미지">
+            <div class="text">
+                <h2>제목을 입력하세요</h2>
+                <p>
+                    이곳은 큰 이미지 옆에 들어가는 설명 텍스트입니다. 여기에 내용을 입력하고 여러 줄로 나눠 작성할 수 있습니다.
+                </p>
             </div>
+        </div>
 
-            <br>
-            
-            <div class="img"></div>
-
-            <br><br>
-            
-            <div class="text-big" style="margin-top: 0; margin-bottom: 0;">
-                트랜스미션 한글
+        <!-- 작은 이미지와 버튼 그룹 -->
+        <div class="small-images-container">
+            <div class="item">
+                <img src="https://via.placeholder.com/100" alt="이미지1">
+                <button>버튼1-1</button>
+                <button>버튼1-2</button>
             </div>
-            <div class="text-small">
-                TRANSMISSION HANGEUL
+            <div class="item">
+                <img src="https://via.placeholder.com/100" alt="이미지2">
+                <button>버튼2-1</button>
+                <button>버튼2-2</button>
             </div>
-
-            <br>
-            
-            <div class="text-medium">
-                <a href="https://transmission-hangeul.space/kor.html">한국어</a>
-                <a href="https://transmission-hangeul.space/eng.html">English</a>
+            <div class="item">
+                <img src="https://via.placeholder.com/100" alt="이미지3">
+                <button>버튼3-1</button>
+                <button>버튼3-2</button>
             </div>
-        </div>             
-    </body>
+            <div class="item">
+                <img src="https://via.placeholder.com/100" alt="이미지4">
+                <button>버튼4-1</button>
+                <button>버튼4-2</button>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
