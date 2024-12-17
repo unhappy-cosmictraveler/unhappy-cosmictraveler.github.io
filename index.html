@@ -17,6 +17,10 @@
             color: #fff; /* 기본 텍스트 색상 흰색 */
             font-family: Arial, sans-serif;
         }
+        a {
+            color: #fff; /* 기본 하이퍼링크 글자 색을 흰색으로 설정 */
+            text-decoration: none; /* 밑줄 제거 (선택 사항) */
+        }
 
         /* 큰 사각형 컨테이너 크기 두 배로 키우기 */
         .main-box {
@@ -91,11 +95,7 @@
             background-color: #333; /* 버튼 호버 시 어두운 회색 */
         }
 
-        /* 버튼 눌렀을 때 글자 색 변경 방지 */
-        .item button:active {
-            color: #fff; /* 버튼 눌렀을 때도 글자 색을 흰색으로 유지 */
-            background-color: #333; /* 버튼 클릭 시 배경색 */
-        }
+
 
         /* 반응형: 모바일 화면 */
         @media (max-width: 1080px) {
