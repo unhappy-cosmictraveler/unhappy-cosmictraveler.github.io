@@ -91,8 +91,14 @@
             background-color: #333; /* 버튼 호버 시 어두운 회색 */
         }
 
+        /* 버튼 눌렀을 때 글자 색 변경 방지 */
+        .item button:active {
+            color: #fff; /* 버튼 눌렀을 때도 글자 색을 흰색으로 유지 */
+            background-color: #333; /* 버튼 클릭 시 배경색 */
+        }
+
         /* 반응형: 모바일 화면 */
-        @media (max-width: 768px) {
+        @media (max-width: 1080px) {
             .top-container {
                 flex-direction: column; /* 큰 이미지와 텍스트 세로 정렬 */
                 align-items: flex-start; /* 텍스트 왼쪽 정렬 */
