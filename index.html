@@ -21,9 +21,9 @@
         /* 큰 사각형 컨테이너 크기 두 배로 키우기 */
         .main-box {
             width: 90%;
-            max-width: 1600px; /* 기존 800px에서 2배 확장 */
+            max-width: 1200px; /* 최대 너비 조정 */
             background-color: #000; /* 컨테이너 배경도 검은색 */
-            padding: 40px; /* 패딩 두 배로 확장 */
+            padding: 20px; /* 패딩은 이전 크기 유지 */
             box-sizing: border-box;
             /* 테두리와 그림자 제거 */
             border: none;
@@ -34,14 +34,14 @@
         .top-container {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 40px; /* 간격 두 배로 확장 */
+            margin-bottom: 20px; /* 간격 조정 */
         }
 
         .top-container img {
             width: 400px; /* 기존 200px에서 두 배 확장 */
             height: auto;
             border-radius: 0; /* 이미지 각지게 만들기 */
-            margin-right: 40px; /* 간격 두 배로 확장 */
+            margin-right: 20px; /* 간격 조정 */
         }
 
         .top-container .text {
@@ -56,7 +56,7 @@
         .small-images-container {
             display: flex;
             justify-content: space-between;
-            gap: 20px; /* 간격 두 배로 확장 */
+            gap: 20px; /* 간격 유지 */
             flex-wrap: wrap; /* 작은 화면 대응 */
         }
 
@@ -138,7 +138,7 @@
         <!-- 작은 이미지와 버튼 그룹 -->
         <div class="small-images-container">
             <div class="item">
-                <img src="https://via.placeholder.com/200" alt="이미지1">
+                <img src="./img/01.jpg" alt="이미지1">
                 <button><a href="https://www.youtube.com/@Unhappy.theCosmicTraveler">언해피의 우주여행</a></button>
                 <button><a href="https://www.youtube.com/@Unhappy.theCosmicTraveler">Unhappy the Cosmic Traveler</button>
             </div>
