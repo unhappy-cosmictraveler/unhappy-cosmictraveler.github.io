@@ -101,21 +101,42 @@
             font-style: normal;
         }
         @media screen and (max-width: 1080px) {
-            .top-container {
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #f0f0f0;
+            }
+            .photo-container {
+                display: flex;
                 flex-direction: column;
                 align-items: center;
-                text-align: center;
+                gap: 20px; /* 사진 사이 간격 */
             }
-            .top-container img {
-                width: 100%; /* 화면의 가로폭에 맞추기 */
-                max-width: 300px; /* 너무 커지지 않도록 제한 */
+            .photo-container img {
+                width: 200px; /* 사진의 가로 크기 */
                 height: auto; /* 비율 유지 */
-                margin: 0 0 20px 0; /* 아래쪽 여백 추가 */
+                border-radius: 8px; /* 모서리 둥글게 */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 */
             }
-            .top-container .text {
-                font-size: 14px;
-                line-height: 1.6;
-            }
+        }
+    </style>
+</head>
+<body>
+    <div class="photo-container">
+        <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+        <img src="photo3.jpg" alt="Photo 3">
+        <img src="photo4.jpg" alt="Photo 4">
+        <img src="photo5.jpg" alt="Photo 5">
+    </div>
+</body>
+</html>
+
         }
 
     </style>
