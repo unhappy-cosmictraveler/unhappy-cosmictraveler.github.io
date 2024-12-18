@@ -108,17 +108,25 @@
         }
         @media (max-width: 1080px) {
             html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #000;
-            color: #fff;
-            font-family: 'NotoSansKR-R', sans-serif;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #000;
+                color: #fff;
+                font-family: 'NotoSansKR-R', sans-serif;
             }
             .main-box {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .top-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .small-images-container {
                 flex-direction: column;
                 gap: 15px;
             }
