@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="언해피의 우주여행 Unhappy the Cosmic Traveler">
-        <meta property="og:description" content="언해피의 우주여행 Unhappy the Cosmic Traveler">
+        <meta property="og:description" content="우주여행자 언해피 Unhappy the Cosmic Traveler">
         <meta property="og:image" content="./img/01.jpg">
         <meta property="og:url" content="/https://unhappy-cosmictraveler.life/">
         <meta property="og:type" content="website">
@@ -58,8 +58,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* width: 200px; */
-            /* margin-bottom: 20px; */
         }
         .photo-item img {
             width: 200px;
@@ -68,8 +66,6 @@
         }
         .photo-item button {
             width: 100%;
-
-            
             background-color: black;
             color: white;
             border: 1px solid white;
@@ -95,18 +91,9 @@
         }
         @media (max-width: 1080px) {
             html, body {
-                margin: 0;
-                padding: 0;
-                background-color: black;
-                color: white;
-                font-family: Arial, sans-serif;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 justify-content: normal;            
                 height: auto;
                 width: auto%;
-                font-family: 'NotoSansKR-R', sans-serif;
             }
             .container {
                 flex-direction: column;
@@ -135,7 +122,8 @@
                 max-width: 200px;
             }
             .photo-item img {
-                width: 100%;
+                /* width: 100%; */
+                width: 300px;
             }
             h2 {
                 text-align: center;
@@ -149,7 +137,9 @@
                 <img src="./img/01.jpg">
                 <div class="text">
                     <h2>
-                        언해피의 우주여행<br>Unhappy the Cosmic Traveler
+                        언해피의 우주여행
+                        <br>
+                        Unhappy <br class="responsive-br"> the Cosmic Traveler
                     </h2>
                     <p>
                         안녕, 나는 우주를 여행 중인 우주여행자 언해피야.
