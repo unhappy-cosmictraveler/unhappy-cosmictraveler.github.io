@@ -1,1 +1,1 @@
-https://unhappy-cosmictraveler.life
+unhappy-cosmictraveler.life
