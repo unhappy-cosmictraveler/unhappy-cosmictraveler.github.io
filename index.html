@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="언해피의 우주여행 Unhappy the Cosmic Traveler">
+        <meta property="og:description" content="우주여행자 언해피 Unhappy the Cosmic Traveler">
+        <meta property="og:image" content="./img/01.jpg">
+        <meta property="og:url" content="https://unhappy-cosmictraveler.life">
+        <meta property="og:type" content="website">
+        <meta name="naver-site-verification" content="2a274f2f5c04081448a1a0b5a9b1910e1ecb170e" />
+        <title>언해피의 우주여행 Unhappy the Cosmic Traveler</title>
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    </head>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'NotoSansKR-R', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;            
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1080px;
+            margin: 20px;
+        }
+        .photo-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .photo-text img {
+            width: 100%;
+            height: auto;
+        }
+        .photo-text .text {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .photo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo-item img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .photo-item button {
+            width: 100%;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .photo-item button:hover {
+            background-color: white;
+            color: black;
+        }
+        .responsive-br {
+            display: none;
+        }
+        @font-face {
+            font-family: 'NotoSansKR-R';
+            src: url('./fonts/NotoSansKR-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @media (max-width: 1080px) {
+            html, body {
+                justify-content: normal;            
+                height: auto;
+                width: auto%;
+                min-height: unset;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo-text {
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo-text img {
+                width: 100%;
+                max-width: 400px;
+            }
+            .photo-text .text {
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .photo-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo-item {
+                width: 100%;
+                max-width: 200px;
+            }
+            .photo-item img {
+                width: 250px;
+            }
+            .photo-item button {
+                font-size: 15px;
+            }            
+            h2 {
+                display: none;
+                /* text-align: center; */
+            }
+            .responsive-br {
+                display: inline;
+            }
+        }
+    </style>    
+    <body>
+        <div class="container">
+            <div class="photo-text">
+                <img src="./img/00.jpg">
+                <div class="text">
+                    <h2>
+                        우주여행자 언해피
+                        <br>
+                        Unhappy the <br class="responsive-br">Cosmic Traveler
+                    </h2>
+                    <p>
+                        안녕, 우주의 친구들!
+                        <br>
+                        나는 삶과 행복의 진정한 의미를 찾기 위해 이 우주를 여행 중인
+                        <br>
+                        '우주여행자 언해피'야.
+                        <br>
+                        나는 나의 여행을 통해 온 우주에 사랑과 희망의 메시지를 전하려 해.
+                        <br>
+                        나의 조금은 외롭지만, 우주적인 여정을 계속 지켜봐주실 바래.
+                        <br>
+                        이 우주 어딘가에서 또 만나자, 안녕!
+                        <br><br>
+                        Hi, all my friends in the universe!
+                        <br>
+                        I'm Unhappy the Cosmic Traveler.
+                        <br>
+                        I'm on a journey to find the meaning of life and happiness.
+                        <br>
+                        And through my journey, I want to spread love and hope to the whole universe.
+                        <br>
+                        Please keep watching my lonely but cosmic journey.
+                        <br>
+                        See you somewhere in the stars!
+                    </p>
+                </div>
+            </div>            
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="./img/01.jpg">
+                    <button onclick="window.open('https://www.youtube.com/@unhappy.cosmictraveler', '_blank')">언해피의 우주여행</button>
+                    <button onclick="window.open('https://www.youtube.com/@unhappy.cosmictraveler', '_blank')">Unhappy the <br class="responsive-br">Cosmic Traveler</button>
+                </div>
+                <br class="responsive-br">
+                <div class="photo-item">
+                    <img src="./img/02.jpg">
+                    <button onclick="window.open('https://transmission-hangeul.space/kor.html', '_blank')">트랜스미션 한글</button>
+                    <button onclick="window.open('https://transmission-hangeul.space/eng.html', '_blank')">TRANSMISSION HANGEUL</button>
+                </div>
+                <br class="responsive-br">
+                <div class="photo-item">
+                    <img src="./img/03.jpg">
+                    <button onclick="window.open('https://www.unhappycircuit.com/kor.html', '_blank')">언해피서킷(2014~2023)</button>
+                    <button onclick="window.open('https://www.unhappycircuit.com/eng.html', '_blank')">Unhappy Circuit (2014~2023)</button>
+                </div>
+                <br class="responsive-br">
+                <div class="photo-item">
+                    <img src="./img/04.jpg">
+                    <button onclick="window.open('https://www.instagram.com/unhappy.cosmictraveler', '_blank')">@unhappy.cosmictraveler</button>
+                    <button onclick="window.location.href='mailto:unhappy.cosmictraveler@gmail.com';">unhappy.cosmictraveler<br class="responsive-br">@gmail.com</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
