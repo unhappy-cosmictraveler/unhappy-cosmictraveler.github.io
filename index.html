@@ -83,7 +83,7 @@
             display: none;
         }
 
-        /* ── 타이틀 크기(데스크톱 기준) ── 데스크톱 전체화면: 한글 68px / 영문 36px */
+        /* ── 데스크톱 전체화면시 타이틀 크기: 한글 68px / 영문 36px */
         .title-ko {
             font-size: clamp(34px, 10vw, 68px);
             font-weight: bold;
@@ -145,19 +145,14 @@
             }
         }
 
-        /* ───────────── 스마트폰(터치기기) 전용 ─────────────
-           데스크톱(마우스)에는 절대 적용되지 않습니다. 폰에서만 아래 고정 크기로 표시됩니다.
-           ▸ 한글을 더 키우려면 .title-ko 의 px 값을 올리세요  (예: 40px → 44px)
-             단, 아이폰6(폭 375px)에서는 40px 정도가 '한 줄' 한계입니다. 그 이상이면 두 줄로 줄바꿈됩니다.
-           ▸ 영문을 더 줄이려면 .title-en 의 px 값을 내리세요  (예: 20px → 18px)
-           ▸ 글자 두께(굵기)는 -webkit-text-stroke 값으로 조절  (0.01em=얇게 ~ 0.04em=굵게) */
+        /* 스마트폰(폭 700px 이하): 한글 40px, 영문 20px 고정 */
         @media (hover: none) and (pointer: coarse) and (max-width: 700px) {
             .title-ko {
-                font-size: 40px;                          /* 한글 타이틀: 폰에서 크게 */
-                -webkit-text-stroke: 0.02em currentColor; /* 폰에서 얇아지는 굵기 보정 */
+                font-size: 40px;                          /* 한글 타이틀 폰트 크기 */
+                -webkit-text-stroke: 0.02em currentColor; /* 굵기 보정 */
             }
             .title-en {
-                font-size: 20px;                          /* 영문 타이틀: 폰에서 작게 (한 줄로 들어옴) */
+                font-size: 20px;                          /* 영문 타이틀 폰트 크기 */
             }
         }
     </style>    
