@@ -11,9 +11,6 @@
         <meta name="naver-site-verification" content="2a274f2f5c04081448a1a0b5a9b1910e1ecb170e" />
         <title>우주여행자 언해피 Unhappy the Cosmic Traveler</title>
         <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <style>
         html, body {
@@ -27,9 +24,7 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            width: 100%;
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
+            width: 100%;            
         }
         .container {
             display: flex;
@@ -54,19 +49,6 @@
             margin-left: 0;
             margin-top: 20px;
             text-align: center;
-        }
-        /* 타이틀: 데스크탑(브라우저) 기준 스타일 */
-        .title-kr {
-            font-family: 'Noto Sans KR', 'NotoSansKR-R', sans-serif;
-            font-size: clamp(34px, 10vw, 68px);
-            font-weight: 700;
-            line-height: 1.15;
-        }
-        .title-en {
-            font-family: 'Noto Sans KR', 'NotoSansKR-R', sans-serif;
-            font-size: clamp(18px, 5vw, 36px);
-            font-weight: 400;
-            line-height: 1.2;
         }
         .photo-grid {
             display: flex;
@@ -105,7 +87,6 @@
             src: url('./fonts/NotoSansKR-Regular.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
-            font-display: swap;
         }
         @media (max-width: 1080px) {
             html, body {
@@ -153,20 +134,6 @@
                 display: inline;
             }
         }
-        /* 스마트폰: 한글은 더 크고 굵게, 영문은 더 작게 (대비 강화) */
-        @media (max-width: 480px) {
-            .container {
-                margin: 10px;
-            }
-            .title-kr {
-                font-size: clamp(34px, 11vw, 54px);
-                font-weight: 700;
-            }
-            .title-en {
-                font-size: clamp(15px, 4vw, 18px);
-                font-weight: 400;
-            }
-        }
     </style>    
     <body>
         <div class="container">
@@ -174,9 +141,9 @@
                 <img src="./img/00.jpg">
                 <div class="text">
                     <h2>
-                        <span class="title-kr">우주여행자 언해피</span>
+                        <span style="font-size: clamp(34px, 10vw, 68px); font-weight: bold;">우주여행자 언해피</span>
                         <br>
-                        <span class="title-en">Unhappy the Cosmic Traveler</span>
+                        <span style="font-size: clamp(18px, 5vw, 36px);">Unhappy the Cosmic Traveler</span>
                     </h2>
                     <p style="display: inline-block; text-align: left;">
                         <br>
